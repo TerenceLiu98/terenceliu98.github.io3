@@ -66,7 +66,7 @@
 
   <article class="article">
     
-    <span class="article-duration">1 min read</span>
+    <span class="article-duration">2 min read</span>
     
 
     <h1 class="article-title">New Blog </h1>
@@ -86,20 +86,21 @@
 <div id="what-is-the-difference" class="section level2">
 <h2>What is the difference</h2>
 <p>This is a different experience than the normal Hugo + Github Pages, since this is also powered by RMarkdown, which means I can writing blog in Rstudio and also Rmarkdown is friendly to our statistics student because of the <code>R</code>. For instance:</p>
-<pre class="r"><code># Define 2 vectors
-cars &lt;- c(1, 3, 6, 4, 9)
-trucks &lt;- c(2, 5, 4, 5, 12)
-
-# Graph cars using a y axis that ranges from 0 to 12
-plot(cars, type=&quot;o&quot;, col=&quot;blue&quot;, ylim=c(0,12))
-
-# Graph trucks with red dashed line and square points
-lines(trucks, type=&quot;o&quot;, pch=22, lty=2, col=&quot;red&quot;)
-
-# Create a title with a red, bold/italic font
-title(main=&quot;Autos&quot;, col.main=&quot;red&quot;, font.main=4)</code></pre>
+<pre class="r"><code>library(ggplot2)
+ggplot(diamonds, aes(x = carat, y = price, colour = clarity)) +
+  geom_point() +
+  xlab(&quot;Carats&quot;) + ylab(&quot;Price&quot;) + 
+  ggtitle(&quot;Diamonds&quot;)</code></pre>
 <p><img src="/post/2019-08-18-new-blog_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<p>I can easily draw a plot by using Rmd.</p>
+<p>I can easily draw a plot by using Rmd. In the above plot, I draw it by using the famous library: <code>ggplot</code>; what’s more, it can eaisly for us to add plug-in in our post, like, twitter, youtube and etc.:</p>
+<pre class="r"><code>blogdown::shortcode(&quot;youtube&quot;, &quot;CjTLN-FXiFA&quot;)</code></pre>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/CjTLN-FXiFA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+It is a ‘sharp knife’ for our “bvlogger”, I means blogger + vlogger actually.</p>
+<p>Also, since it combined with hugo, I can easily push my post on GitHub and use the GitHub Pages service, which means I can save some server money.</p>
 </div>
 <div id="where-is-the-old-article" class="section level2">
 <h2>Where is the old article</h2>
@@ -112,6 +113,28 @@ I will try my best to move them under the new structure, but forgive me, there a
   </article>
 
   
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//terenceliu98-github-io-1.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
 
 
 </main>
