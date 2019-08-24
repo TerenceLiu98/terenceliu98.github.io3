@@ -6,10 +6,24 @@
     <description>Recent content on Terence Lau | Stat Undergra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>use samsung tab keyboard</title>
+      <link>/2019/08/24/use-samsung-tab-keyboard/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/08/24/use-samsung-tab-keyboard/</guid>
+      <description>如题所示，我现在就在使用三星的 tab S3 官配的磁吸键盘进行写作。写作速度缓慢，键盘的尺寸是一个影响因素，更多的是因为在使用远程桌面，而且牙齿还不算低。
+为什么会购买这个键盘原因很简单：1. 我有一个三星 tab S3 （这个假期买的）2. 我没有带罗技的 K480 回家
+其实第二个原因是不成立的，因为 K480 十分的不便携，非常的大不说，重量也感人。另， 我也想试试磁吸键盘到底怎么样，身边太多的人在使用 iPad + keyboard + Apple Pencil，可能我是为数不多在使用全三星套装的人 (Samsung S8 + tab S3 + keyboard + Spen)。 嗯，非常不政治正确，没有购入华为的 M6（虽然真的有想过）
+体验如何到目前为止，我还是有些不适应，键帽确实小，对于我这种 MX Master2 才算刚刚好的手来说真的小，不过也还行，因为他的键帽反馈可以接受（跟 MBP 2015 retina 比较像， 都是比较直上直下的）如果这种键盘可以称得上有反馈的话；绝对是比 ipad 的键盘好，毕竟是硬的（谁不喜欢硬的呢）
+另外，这个 9.7 寸屏幕对于写写文章的人来说已经不错了，偶尔改改代码也是极好的。甚至可以分屏使用，比如我复制 yihui 写的这段代码：
+set.seed(123)# 真实模型x = sort(runif(100))y = 2 + 1 * x + 4 * (x &amp;gt; 0.</description>
+    </item>
     
     <item>
       <title>New Blog </title>

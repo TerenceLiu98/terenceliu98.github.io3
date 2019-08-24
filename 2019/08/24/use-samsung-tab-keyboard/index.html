@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.57.2" />
+
+
+<title>use samsung tab keyboard - Terence Lau | Stat Undergra</title>
+<meta property="og:title" content="use samsung tab keyboard - Terence Lau | Stat Undergra">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/TerenceLiu98">GitHub</a></li>
+    
+    <li><a href="https://terenceliu98.github.io/terenceliu98.github.io2/">Old Version</a></li>
+    
+    <li><a href="https://twitter.com/terencelau_st">Twitter</a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liu-jun-jie-53/">Zhihu/知乎</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">use samsung tab keyboard</h1>
+
+    
+    <span class="article-date">2019-08-24</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>如题所示，我现在就在使用三星的 tab S3 官配的磁吸键盘进行写作。写作速度缓慢，键盘的尺寸是一个影响因素，更多的是因为在使用远程桌面，而且牙齿还不算低。</p>
+<div id="section" class="section level2">
+<h2>为什么会购买这个键盘</h2>
+<p>原因很简单：
+1. 我有一个三星 tab S3 （这个假期买的）
+2. 我没有带罗技的 K480 回家</p>
+<p>其实第二个原因是不成立的，因为 K480 十分的不便携，非常的大不说，重量也感人。另， 我也想试试磁吸键盘到底怎么样，身边太多的人在使用 iPad + keyboard + Apple Pencil，可能我是为数不多在使用全三星套装的人 (Samsung S8 + tab S3 + keyboard + Spen)。 嗯，非常不政治正确，没有购入华为的 M6（虽然真的有想过）</p>
+</div>
+<div id="section-1" class="section level2">
+<h2>体验如何</h2>
+<p>到目前为止，我还是有些不适应，键帽确实小，对于我这种 MX Master2 才算刚刚好的手来说真的小，不过也还行，因为他的键帽反馈可以接受（跟 MBP 2015 retina 比较像， 都是比较直上直下的）如果这种键盘可以称得上有反馈的话；绝对是比 ipad 的键盘好，毕竟是硬的（谁不喜欢硬的呢）</p>
+<p>另外，这个 9.7 寸屏幕对于写写文章的人来说已经不错了，偶尔改改代码也是极好的。甚至可以分屏使用，
+比如我复制 yihui 写的这段代码：</p>
+<pre class="r"><code>set.seed(123)
+# 真实模型
+x = sort(runif(100))
+y = 2 + 1 * x + 4 * (x &gt; 0.5) + 3 * (x - 0.5) * (x &gt; 0.5) + rnorm(100)
+par(mar = c(4, 4, 0, 0), family = &quot;serif&quot;, mgp = c(2, 1, 0))
+plot(x, y, pch = 20, col = &quot;darkgray&quot;)
+# 斜率不同，截距限制
+fit1 = lm(y ~ 1 + x + I((x - 0.5) * (x &gt; 0.5)))
+lines(x, fitted(fit1), lwd = 2, col = 2)
+# 斜率不同，截距也不同
+fit2 = lm(y ~ 1 + x + I(x &gt; 0.5) + I((x - 0.5) * (x &gt; 0.5)))
+lines(x, fitted(fit2), lwd = 2, lty = 2)</code></pre>
+<p><img src="/post/2019-08-24-use-samsung-tab-keyboard_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="section-2" class="section level2">
+<h2>总结</h2>
+<p>To sum up, 这个键盘给我的体验还是不错的，希望能在新学期更大的效用， 毕竟算是一个轻薄平板 + 台式；至于我的 MBP， emmm，因为某些不可描述原因，只能当作台式二号机</p>
+</div>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//terenceliu98-github-io-1.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <p></p>Copyright &copy; Terence Lau 2016-2019</p>
+          
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+
