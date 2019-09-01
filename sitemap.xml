@@ -8,12 +8,12 @@
   </url>
   
   <url>
-    <loc>/tags/daily/</loc>
+    <loc>/categories/daily/</loc>
     <lastmod>2019-08-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/daily/</loc>
+    <loc>/tags/daily/</loc>
     <lastmod>2019-08-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -40,6 +40,31 @@
   <url>
     <loc>/2019/08/18/new-blog/</loc>
     <lastmod>2019-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/06/20/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/computer/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/computer/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pc/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/pc/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
