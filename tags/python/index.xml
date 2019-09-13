@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Terence Lau | Stat Undergra</title>
+    <link>/tags/python/</link>
+    <description>Recent content in Python on Terence Lau | Stat Undergra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction_to_DL_Assignment1</title>
+      <link>/2019/09/13/introduction-to-dl-assignment1/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/09/13/introduction-to-dl-assignment1/</guid>
+      <description>Assignment: 1.1 When using &amp;lsquo;print(dict)&amp;rsquo;, the result of the printing a dictionary is not in order. Try write a code to print &amp;lsquo;dict&amp;rsquo; in ascending or descending order of the key, using d0 = {&amp;lsquo;cat&amp;rsquo;: &amp;lsquo;animal&amp;rsquo;, &amp;lsquo;apple&amp;rsquo;: &amp;lsquo;fruit&amp;rsquo;, &amp;lsquo;snake&amp;rsquo;: &amp;lsquo;reptile&amp;rsquo;, &amp;lsquo;rose&amp;rsquo;: &amp;lsquo;flower&amp;rsquo;} as an example. Hint: use the python function sorted() on keys().
+## sorted acrroding alphabet d0 = {&#39;cat&#39;: &#39;animal&#39;, &#39;apple&#39;: &#39;fruit&#39;, &#39;snake&#39;: &#39;reptile&#39;, &#39;rose&#39;: &#39;flower&#39;} print(&amp;quot;the sorted keys of dictionary d0:&amp;quot;, sorted(d0.</description>
+    </item>
+    
+  </channel>
+</rss>

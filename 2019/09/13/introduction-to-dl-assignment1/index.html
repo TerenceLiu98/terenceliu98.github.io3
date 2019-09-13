@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.57.2" />
+
+
+<title>Introduction_to_DL_Assignment1 - Terence Lau | Stat Undergra</title>
+<meta property="og:title" content="Introduction_to_DL_Assignment1 - Terence Lau | Stat Undergra">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/TerenceLiu98">GitHub</a></li>
+    
+    <li><a href="https://terenceliu98.github.io/terenceliu98.github.io2/">Old Version</a></li>
+    
+    <li><a href="https://twitter.com/terencelau_st">Twitter</a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liu-jun-jie-53/">Zhihu/知乎</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Introduction_to_DL_Assignment1</h1>
+
+    
+    <span class="article-date">2019-09-13</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="assignment">Assignment:</h4>
+
+<p>1.1 When using &lsquo;print(dict)&rsquo;, the result of the printing a dictionary is not in order.
+Try write a code to print &lsquo;dict&rsquo; in ascending or descending order of the key, using  d0 = {&lsquo;cat&rsquo;: &lsquo;animal&rsquo;, &lsquo;apple&rsquo;: &lsquo;fruit&rsquo;, &lsquo;snake&rsquo;: &lsquo;reptile&rsquo;, &lsquo;rose&rsquo;: &lsquo;flower&rsquo;} as an example.
+Hint: use the python function sorted() on keys().</p>
+
+<pre><code class="language-python">## sorted  acrroding alphabet 
+
+d0 = {'cat': 'animal', 'apple': 'fruit', 'snake': 'reptile', 'rose': 'flower'}
+print(&quot;the sorted keys of dictionary d0:&quot;, sorted(d0.keys()))
+print(&quot;the sorted values of dictonary d0:&quot;, sorted(d0.values()))
+</code></pre>
+
+<pre><code>the sorted keys of dictionary d0: ['apple', 'cat', 'rose', 'snake']
+the sorted values of dictonary d0: ['animal', 'flower', 'fruit', 'reptile']
+</code></pre>
+
+<pre><code class="language-python">## sorted accroding inverse alphabet
+
+
+d0 = {'cat': 'animal', 'apple': 'fruit', 'snake': 'reptile', 'rose': 'flower'}
+print(&quot;the sorted keys of dictionary d0:&quot;, sorted(d0.keys(), reverse = True))
+print(&quot;the sorted values of dictonary d0:&quot;, sorted(d0.values(), reverse = True))
+</code></pre>
+
+<pre><code>the sorted keys of dictionary d0: ['snake', 'rose', 'cat', 'apple']
+the sorted values of dictonary d0: ['reptile', 'fruit', 'flower', 'animal']
+</code></pre>
+
+<p>1.2 Write a function to count the number of all Fibonacci numbers less then N.</p>
+
+<pre><code class="language-python"># Returns count of fibonacci  
+# numbers in [low, high] 
+def countFibs(low, high): 
+      
+    # Initialize first three  
+    # Fibonacci Numbers 
+    f1, f2, f3 = 0, 1, 1
+  
+    # Count fibonacci numbers in  
+    # given range 
+    result = 0
+  
+    while (f1 &lt;= high): 
+        if (f1 &gt;= low): 
+            result += 1
+        f1 = f2 
+        f2 = f3 
+        f3 = f1 + f2 
+  
+    return result 
+
+countFibs(1, 10)
+</code></pre>
+
+<pre><code>6
+</code></pre>
+
+<p>1.3 Write a function to count the number of all prime numbers less then N.</p>
+
+<pre><code class="language-python">'''
+Purpose: Find Prime Number
+Author: Terence Liu
+'''
+### CPU Computation ###
+#program works, but is porobably really shitty since im a beginner...
+def num_of_prime(N):
+    global a 
+    a = 0
+    for n in range(2,N):
+        for x in range(2, n):
+            if n % x == 0:
+                break
+        else:
+            a = a + 1
+    print(&quot;There are&quot;, a, &quot;prime numbers inside (2, %d)&quot; % (N) )
+
+# test run with N = 10
+num_of_prime(10)
+</code></pre>
+
+<pre><code>There are 4 prime numbers inside (2, 10)
+</code></pre>
+
+<p>1.4 If N is a positive integer, the total number of positive integers that are relatively prime to N and less than N is denoted by $\phi(N)$. It is  called the Euler function of $N$. For example, we have $\phi(2)=1$, $\phi(3)=\phi(4)=2$, and if $p$ is a prime number then $\phi(p)=p-1$.
+Write a python function to calculate $\phi(N)$.</p>
+
+<pre><code class="language-python">'''
+Purpose: Find Prime Number
+Author: Terence Liu
+'''
+
+# Define gcd function
+def gcd(a, b): 
+  
+    if (a == 0): 
+        return b 
+    return gcd(b % a, a) 
+  
+
+# Eefine Euler Totient Function 
+def phi(n): 
+  
+    result = 1
+    for i in range(2, n): 
+        if (gcd(i, n) == 1): 
+            result+=1
+    return result 
+  
+# Driver Code 
+N = int(input(&quot;input the N: &quot;))
+print(&quot;phi(N) = %d&quot; % phi(N))
+</code></pre>
+
+<pre><code>input the N: 45
+phi(N) = 24
+</code></pre>
+
+<p>1.5 A positive integer is called a perfect number if by adding all the positive divisors of the number (except itself), the result is the number itself. The first perfect number is 6 [=1+2+3]. Other perfect numbers include 28 [=1+2+7+4+14], 496 and 8128. Write a python function to calculate all perfect numbers less than or equal to N.</p>
+
+<pre><code class="language-python">def is_perfect(number):
+    factor = [i for i in range(1, number) if not number % i]
+    return sum(factor) == number and number != 0
+
+N = int(input(&quot;input the N: &quot;))
+print(&quot;Is it %d a perfect number? The answer is &quot; % (N),  is_perfect(N))
+</code></pre>
+
+<pre><code>input the N: 6
+Is it 6 a perfect number? The answer is  True
+</code></pre>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//terenceliu98-github-io-1.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <p></p>Copyright &copy; Terence Lau 2016-2019</p>
+          
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

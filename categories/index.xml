@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Terence Lau | Stat Undergra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Assignment</title>
+      <link>/categories/assignment/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/assignment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer</title>
+      <link>/categories/computer/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/computer/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Daily</title>
@@ -17,15 +35,6 @@
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/daily/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer</title>
-      <link>/categories/computer/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/computer/</guid>
       <description></description>
     </item>
     
