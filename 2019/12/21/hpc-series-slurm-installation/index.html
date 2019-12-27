@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.57.2" />
+
+
+<title>HPC Series - Slurm Installation (Not finished) - Terence Lau | Stat Undergra</title>
+<meta property="og:title" content="HPC Series - Slurm Installation (Not finished) - Terence Lau | Stat Undergra">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/TerenceLiu98">GitHub</a></li>
+    
+    <li><a href="https://terenceliu98.github.io/terenceliu98.github.io2/">Old Version</a></li>
+    
+    <li><a href="https://twitter.com/terencelau_st">Twitter</a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liu-jun-jie-53/">Zhihu/知乎</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">HPC Series - Slurm Installation (Not finished)</h1>
+
+    
+    <span class="article-date">2019-12-21</span>
+    
+
+    <div class="article-content">
+      
+
+<h3 id="why-we-need-hpc">Why we need HPC</h3>
+
+<p>HPC means High Performance Computing. After A semester of using KVM, I have a feeling that not everyone needs a system, not meaning that they do not need a operation system, what I mean is that when they are working on their FYP or their research, they do not want to set up a enviornment especially they do not want to change their workflow. Therefore, they need a station that they can submit their task, and get their output or result few moments later.</p>
+
+<h3 id="why-slurm">Why Slurm</h3>
+
+<p>In this kinds of philosophy, I thought that the HPC-like computing cluster may suitable for our department and I searched for some resources: USTC&rsquo;s HPC: National High Performance Computing Center at Hefei, USC&rsquo;s HPC: hpcc.usc.edu and etc. Most of these World class HPC clusters are using Slurm as the workload manager. This is the reference for Slurm&rsquo;s installation in Ubuntu (16.04 and 18.04):</p>
+
+<p>Step One:</p>
+
+<ol>
+<li><p>Update package metadata</p>
+
+<pre><code class="language-shell">sudo apt-get update
+sudo apt-get upgrade -y # actually this command is not necessary 
+</code></pre></li>
+
+<li><p>Locate slurm package ( available in Ubuntu repo)</p>
+
+<pre><code class="language-shell">sudo apt search slurm
+</code></pre></li>
+
+<li><p>Correct package is <code>slurm-wlm</code>(Slurm Workload Manager)</p>
+
+<pre><code class="language-shell">
+sudo apt-get install slurm-wlm
+</code></pre></li>
+</ol>
+
+<p>Note that, this package will automatically install dependent packages for us (slurmd, lua, munge, etc.)</p>
+
+<p>Also, we need to install the documentation packages, which can help us generate the configuration file. Hence:</p>
+
+<pre><code class="language-shell">sudo apt-get install slurm-wlm-doc
+sudo dpkg -L slurm-wlm-doc
+</code></pre>
+
+<p>We can use the web browser to generate configuration.</p>
+
+<pre><code class="language-shell">firefox /usr/share/doc/slurm-wlm-doc/html/configurator.easy.html
+</code></pre>
+
+<p>You can mostly use the defaults for the settings on this page. Make the following adjustments:
+1. Make sure the hostname of the system is ControlMachine and NodeName
+2. State Preservation: set StateSaveLocation to <code>/var/spool/slurm-llnl</code>
+3. Process tracking: use Pgid instead of Cgroup
+3. Event loggin: this is more of a personal preference as to whether you want the loggin to be sent to the standard system log (<code>/var/log/syslog</code>), or r if you would like it saved to its
+own unique file to keep it clearer to read (e.g. <code>/var/log/slurm-llnl/SlurmctldLogFile</code>)
+4. Process ID logging: set this to <code>/var/run/slurm-llnl/slurmctld.pid</code> and <code>/var/run/slurm-llnl/slurmd.pid</code></p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//terenceliu98-github-io-1.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <p></p>Copyright &copy; Terence Lau 2016-2019</p>
+          
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

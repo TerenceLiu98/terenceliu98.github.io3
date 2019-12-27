@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.57.2" />
+
+
+<title>Time Series Lecture note - One - Terence Lau | Stat Undergra</title>
+<meta property="og:title" content="Time Series Lecture note - One - Terence Lau | Stat Undergra">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/TerenceLiu98">GitHub</a></li>
+    
+    <li><a href="https://terenceliu98.github.io/terenceliu98.github.io2/">Old Version</a></li>
+    
+    <li><a href="https://twitter.com/terencelau_st">Twitter</a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liu-jun-jie-53/">Zhihu/知乎</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Time Series Lecture note - One</h1>
+
+    
+    <span class="article-date">2019-10-09</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p><em>This course’s title is :<strong>Introduction ot Time Series Analysis and Forecasting</strong></em></p>
+<p>Instrutor: <a href="https://web.uic.edu.hk/en/gs/prospective/6164-dr-wu-jingjin-timothy">Dr.Timothy Wu</a> from United International College</p>
+<div id="what-is-time-series" class="section level2">
+<h2>What is Time Series</h2>
+<p>按照时间的顺序把随机事件变化发展的过程记录下来就构成了一个时间序列。对时间序列进行观察、研究，找寻它变化发展的规律，预测它将来的走势就是时间序列分析。</p>
+<p>Basically, Time Series is a sequential random variables indexed by time. We observe, collect them and find the regular pattern of this sequence; do the forecasting or prediction.</p>
+<ul>
+<li>Most forecasting problems involve the use of time series data</li>
+<li>A time series is a time-oriented (very much closely related to time) sequence of observation on a veriable of interest.</li>
+<li>In application, there are daily, weekly, monthly, quarterly and annual time series.</li>
+</ul>
+<p><strong>Time Series Model</strong>:</p>
+<table style="width:100%;">
+<colgroup>
+<col width="21%" />
+<col width="26%" />
+<col width="21%" />
+<col width="31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name of Method</th>
+<th>Time</th>
+<th>Author</th>
+<th>Name of Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Univeriate Equal Variance, Linear model</td>
+<td>1927, 1937, 1970</td>
+<td>G.U.Yule, G.T. Walker, G.E.P Box and G.. Jenkins</td>
+<td>AR; MA, ARMA; ARIMA</td>
+</tr>
+<tr class="even">
+<td>Heteroskedastic</td>
+<td>1982, 1985</td>
+<td>Robert F.Engle, Bollerslov Nelson etc.</td>
+<td>ARCH, GARCH, EGARCH, IGARCH, GARCH-M</td>
+</tr>
+<tr class="odd">
+<td>Multivariate</td>
+<td>1987</td>
+<td>C.Granger</td>
+<td>Co-intergration</td>
+</tr>
+<tr class="even">
+<td>Nonlinear</td>
+<td>1980</td>
+<td>Howell Tong</td>
+<td>Threshold Models in Non-linear Time Series Anlaysis</td>
+</tr>
+</tbody>
+</table>
+<div id="about-forecasting" class="section level3">
+<h3>About Forecasting</h3>
+<div id="concept" class="section level4">
+<h4>Concept</h4>
+<ul>
+<li>A <strong>forecast</strong> is a statement of future event (or events)</li>
+<li>Forecasting problems are often classified as <strong>short-term</strong>, <strong>medium-term</strong>, and <strong>long-term</strong>.</li>
+</ul>
+<p>Here is a Example: earthquake may happens every minutes, if:</p>
+<ul>
+<li>earthquake will happen few minutes is been telled (<strong>short-term</strong>)</li>
+<li>earthquake will happen few days is been telled (<strong>medium-term</strong>)</li>
+<li>earthquake will happen few months is been telled (<strong>short-term</strong>)</li>
+</ul>
+</div>
+<div id="why-can-we-possibly-make-sensible-short-term-or-even-medium-term-forecasts" class="section level4">
+<h4>Why can we possibly make sensible short-term or even medium-term forecasts?</h4>
+<ul>
+<li>Historical data usually show intertia (惯性) and processes do not change dramatically very quickly</li>
+<li>Change, even a drastic, one will definitely happen, careful studies of pertinent historical data may reveal the mechanism of the process and make it possible to tell the approximate time that the big change will occur.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="nature-and-uses-of-forecasts" class="section level2">
+<h2>Nature and Uses of Forecasts</h2>
+<ul>
+<li>Short-term
+<ul>
+<li>Predicting only a few periods ahead (hours, days, weeks)</li>
+</ul></li>
+<li>Medium-term
+<ul>
+<li>One to two years into the future, typically</li>
+</ul></li>
+<li>Long-term
+<ul>
+<li>Several years into the future</li>
+</ul></li>
+</ul>
+</div>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//terenceliu98-github-io-1.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <p></p>Copyright &copy; Terence Lau 2016-2019</p>
+          
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

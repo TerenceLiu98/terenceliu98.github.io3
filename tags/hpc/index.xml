@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PC on Terence Lau | Stat Undergra</title>
-    <link>/tags/pc/</link>
-    <description>Recent content in PC on Terence Lau | Stat Undergra</description>
+    <title>HPC on Terence Lau | Stat Undergra</title>
+    <link>/tags/hpc/</link>
+    <description>Recent content in HPC on Terence Lau | Stat Undergra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/pc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hpc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>/2019/12/21/hpc-series-slurm-installation/</guid>
       <description>Why we need HPC HPC means High Performance Computing. After A semester of using KVM, I have a feeling that not everyone needs a system, not meaning that they do not need a operation system, what I mean is that when they are working on their FYP or their research, they do not want to set up a enviornment especially they do not want to change their workflow. Therefore, they need a station that they can submit their task, and get their output or result few moments later.</description>
-    </item>
-    
-    <item>
-      <title>How to Build A &#34;Usable&#34; PC</title>
-      <link>/2019/06/20/how-to-build-a-usable-pc/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/06/20/how-to-build-a-usable-pc/</guid>
-      <description>Choice of Hardware Here is my hardware list:
-CPU: i5-9400f GPU: MSI RTX VENTUS 2060 Motherboard: MSI B360M Memory: DDR4 2133MHZ 16GB * 1 Storage:Samsung SSD 860 EVO 250GB + Intel 760P NVMe M.2 256G + Seagate 2T 3.5 HDD  How to choose the hardware? In my opinion, you could just google the keywords, for intance, &amp;ldquo;Deep Learning PC set-up&amp;rdquo;, &amp;ldquo;Electronic Engineering PC set-up&amp;rdquo; and you can find the those pretty good set-up list.</description>
     </item>
     
   </channel>

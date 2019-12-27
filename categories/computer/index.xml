@@ -6,10 +6,19 @@
     <description>Recent content in Computer on Terence Lau | Stat Undergra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/computer/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HPC Series - Slurm Installation (Not finished)</title>
+      <link>/2019/12/21/hpc-series-slurm-installation/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/12/21/hpc-series-slurm-installation/</guid>
+      <description>Why we need HPC HPC means High Performance Computing. After A semester of using KVM, I have a feeling that not everyone needs a system, not meaning that they do not need a operation system, what I mean is that when they are working on their FYP or their research, they do not want to set up a enviornment especially they do not want to change their workflow. Therefore, they need a station that they can submit their task, and get their output or result few moments later.</description>
+    </item>
     
     <item>
       <title>Introduction_to_DL_Assignment1</title>
